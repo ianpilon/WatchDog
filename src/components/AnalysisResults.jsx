@@ -6,7 +6,7 @@ import ExplanationPanel from './ExplanationPanel';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 // eslint-disable-next-line import/no-unresolved
-import impressionMd from "../../.md_files/impression_scale_rubric.md?raw";
+import impressionMd from "../../md_file_folder/impression_scale_rubric.md?raw";
 
 /**
  * Simplified AnalysisResults component.
