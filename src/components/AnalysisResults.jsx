@@ -126,13 +126,11 @@ const AnalysisResults = ({ showResult, localAnalysisResults }) => {
 
       const explanationMap = {
         "Unlikely": "Few or ambiguous cues (0–2 pts). < 25% confidence.",
-        "Possibly": "Some cues, inconsistent (3–4 pts). 25–50% confidence.",
-        "Likely": "Consistent cues (5–6 pts). 50–75% confidence.",
+        "Possibly": "Some subtle cues, inconsistent (1-2 pts approx). 25–50% confidence.", // Combined definition
+        "Likely": "Consistent subtle cues (3+ pts approx). > 50% confidence.", // Combined definition
         "Very Likely": "Strong recurring cues (7+ pts). > 75% confidence.",
-        // We should map the contextual ratings ('No Evidence', 'Possibly', 'Likely') here
-        "No Evidence": "No clear cues identified (0 pts). < 25% confidence.", // Added mapping
-        "Possibly": "Some subtle cues, inconsistent (1-2 pts approx). 25–50% confidence.", // Adjusted explanation
-        "Likely": "Consistent subtle cues (3+ pts approx). > 50% confidence.", // Adjusted explanation
+        // Added mapping for 'No Evidence'
+        "No Evidence": "No clear cues identified (0 pts). < 25% confidence.",
       };
 
       // Get the rating explanation based on the specific field from contextual prompt

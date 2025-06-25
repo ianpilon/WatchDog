@@ -3,9 +3,9 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 // Pre-bundled raw markdown so Vite can include it at build time
 // eslint-disable-next-line import/no-unresolved
-import explicitMd from '../../.md_files/explicit_analysis_criteria.md?raw';
+import explicitMd from '../../md_file_folder/explicit_analysis_criteria.md?raw';
 // eslint-disable-next-line import/no-unresolved
-import contextualMd from '../../.md_files/contextual_analysis_criteria.md?raw';
+import contextualMd from '../../md_file_folder/contextual_analysis_criteria.md?raw';
 
 /**
  * Lightweight panel that explains why the agent classified behaviour as Explicit or Contextual.
