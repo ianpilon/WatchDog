@@ -1,0 +1,60 @@
+{
+  "rewrites": [
+    {
+      "source": "/ingest/(.*)",
+      "destination": "https://us.i.posthog.com/ingest/$1"
+    },
+    {
+      "source": "/static/(.*)",
+      "destination": "https://us-assets.i.posthog.com/static/$1"
+    },
+    {
+      "source": "/decide/(.*)",
+      "destination": "https://us.i.posthog.com/decide/$1"
+    },
+    {
+      "source": "/e/(.*)",
+      "destination": "https://us.i.posthog.com/e/$1"
+    },
+    {
+      "source": "/s/(.*)",
+      "destination": "https://us.i.posthog.com/s/$1"
+    },
+    { 
+      "source": "/((?!ingest|static|decide|e|s).*)", 
+      "destination": "/index.html" 
+    }
+  ],
+  "headers": [
+    {
+      "source": "/ingest/(.*)",
+      "headers": [
+        { "key": "Host", "value": "us.i.posthog.com" }
+      ]
+    },
+    {
+      "source": "/static/(.*)",
+      "headers": [
+        { "key": "Host", "value": "us-assets.i.posthog.com" }
+      ]
+    },
+    {
+      "source": "/decide/(.*)",
+      "headers": [
+        { "key": "Host", "value": "us.i.posthog.com" }
+      ]
+    },
+    {
+      "source": "/e/(.*)",
+      "headers": [
+        { "key": "Host", "value": "us.i.posthog.com" }
+      ]
+    },
+    {
+      "source": "/s/(.*)",
+      "headers": [
+        { "key": "Host", "value": "us.i.posthog.com" }
+      ]
+    }
+  ]
+}
